@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API café</title>
+    <link rel="stylesheet" href="/dist/output.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body class="">
+
+<div class="bg w-screen h-screen absolute mix-blend-hard-light"> </div>
+  
+<main id="monmain" class="absolute sm w-screen h-screen flex flex-col items-center justify-evenly max-w-480 mx-auto font-poppins z-50">
+
+  <!-- RECHERCHE -->
+
+  <section class="champsrecherche w-11/12 h-10 flex justify-between pl-5 pr-5 items-center border-2 rounded-full ">
+
+    <input class="r_city bg-transparent w-80 h-90 border-none focus:outline-none placeholder-opacity-30 text-xs" type="text" id="r_city" placeholder="Ville">
+    <button type="submit" id="search" class="w-10 flex justify-end h-full items-center"></button>
+
+  </section>
+
+  <!-- SECTION 2 -->
+
+  <section class="ajd h-3/6 pl-5 pr-5 w-full flex flex-col justify-around items-center">
+
+        <article class="dateheure w-full text-xxs italic text-end">
+        </article>
+        <article class="condition w-full text-xxs text-end mt-3">
+        </article>
+
+        
+        <article class="icone w-10/12 h-3/4 overflow-hidden" >
+                  
+        </article>
+    
+
+        <article class="temperature text-l">
+        </article>
+        <article class="paysville text-s text-center">
+        </article>
+
+</section>
+
+<!-- SECTION 3 -->
+
+  <section class="autrejours w-screen p-5 h-1/4 max-h-1/4 overflow-scroll">
+    
+  </section>
+
+  <button class="install bg-black text-beige w-5/12 h-10 mt-5 rounded-full">Installer</button>
+
+</main>
+
+</body> 
+
+
+
+  <script src="/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <script src="/js/ajax.js"></script>
+</html>

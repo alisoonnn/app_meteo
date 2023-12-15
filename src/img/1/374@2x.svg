@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e7e0da;
+        stroke: #1e1e24;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .25px;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="cls-1" cx="19.46" cy="23.29" r="3.91"/>
+    <g>
+      <g id="_Radial_Repeat_" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="15.04" y1="23.12" x2="13.44" y2="23.11"/>
+      </g>
+      <g id="_Radial_Repeat_-2" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="16.47" y1="20.06" x2="15.35" y2="18.92"/>
+      </g>
+      <g id="_Radial_Repeat_-3" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="19.65" y1="18.9" x2="19.66" y2="17.3"/>
+      </g>
+      <g id="_Radial_Repeat_-4" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="22.72" y1="20.33" x2="23.86" y2="19.21"/>
+      </g>
+      <g id="_Radial_Repeat_-5" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="23.87" y1="23.51" x2="25.47" y2="23.53"/>
+      </g>
+      <g id="_Radial_Repeat_-6" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="22.44" y1="26.58" x2="23.56" y2="27.72"/>
+      </g>
+      <g id="_Radial_Repeat_-7" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="19.26" y1="27.73" x2="19.25" y2="29.33"/>
+      </g>
+      <g id="_Radial_Repeat_-8" data-name="&amp;lt;Radial Repeat&amp;gt;">
+        <line class="cls-1" x1="16.2" y1="26.3" x2="15.06" y2="27.42"/>
+      </g>
+    </g>
+  </g>
+  <path class="cls-1" d="m33.94,32.82h-15.17c-1.19-.2-2.11-1.18-2.23-2.37-.12-1.23.62-2.39,1.8-2.8-.02-.24-.15-2.08,1.29-3.45,1.26-1.2,2.81-1.16,3.09-1.15.91-2.41,3.21-3.94,5.61-3.81,2.79.16,5.18,2.56,5.32,5.61,1.85.59,3.08,2.31,3.02,4.17-.05,1.67-1.13,3.18-2.74,3.81Z"/>
+</svg>
