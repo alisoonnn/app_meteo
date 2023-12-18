@@ -145,11 +145,11 @@ function loadmeteo(city){
             var dayOfWeek = daysOfWeek[currentDate.getDay()];
 
             // Créer un élément article pour chaque jour
-            var article = $('<article class="demain border-b border-solid flex pl-3 pr-3  items-center overflow-hidden h-11">');
+            var article = $('<article class="demain border-b border-solid flex pl-3 pr-5  items-center h-12">');
 
             // Ajouter le contenu spécifique à chaque jour à l'article
-            article.append('<div class="icone w-2/12"><img src="img/'+data.current.is_day+'/SVG/'+extractedNumber+'@2x.svg" class="w-full h-full  "></div>');
-            article.append('<div class="jour w-10/12 pl-1">' + dayOfWeek + '</div>');
+            article.append('<div class="icone w-2/12 mr-2"><img src="img/'+data.current.is_day+'/SVG/'+extractedNumber+'@2x.svg" class="w-full h-1/2" style="max-width: 50px"></div>');
+            article.append('<div class="jour w-10/12 pl-5">' + dayOfWeek + '</div>');
             article.append('<div class="temp w-1/12">' + maxtemp + '°C</div>');
 
             // Ajouter l'article à la section .autrejours
