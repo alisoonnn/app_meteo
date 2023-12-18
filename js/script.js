@@ -158,7 +158,7 @@ function loadmeteo(city){
                     $('.champsrecherche').addClass('border-black')
                     $('.demain').removeClass('border-beige')
                     $('.demain').addClass('border-black')
-                    installButton.removeClass('border-beige border-solid border-1')
+                    $('.install').removeClass('border-beige border-solid border-1')
                     $('#search').html('<img src="/img/arrow1.svg" alt="" class="arrow w-5">')
 
 
