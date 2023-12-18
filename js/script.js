@@ -38,10 +38,15 @@ if ('serviceWorker' in navigator) {
     showInstallPromotion();
   });
 
-  function showInstallPromotion() {
-    console.log('Ok installation');
-    $('.install').show();
-  }
+  // function showInstallPromotion() {
+  //   console.log('Ok installation');
+  //   $('.install').show();
+  // }
+
+  // json
+
+  
+  // fin json
 
 
 $( document ).ready(function() {
@@ -70,6 +75,21 @@ function loadmeteo(city){
             var journee = data.current.is_day
 
         // FIN DECLA
+
+
+      fetch('/manifest.webmanifest')
+      .then(response => response.json())
+      .then(manifest => {
+        // Remplacez "votreNombre" par la condition que vous souhaitez
+        if(journee == 1){
+          colorbg = '#E7E0DA'
+        }else{
+          colorbg = '#1E1E24'
+        } // Exemple, remplacez par votre condition réelle
+
+        // Modifiez la valeur du manifeste en fonction de votre condition
+        manifest.background_color = colorbg
+      });
 
 
         // IMAGE EXTRACTION NBRE
@@ -161,7 +181,7 @@ function loadmeteo(city){
                     $('.champsrecherche').addClass('border-black')
                     $('.demain').removeClass('border-beige')
                     $('.demain').addClass('border-black')
-                    $('.install').removeClass('border-beige border-solid border-1')
+                    installButton.removeClass('border-beige border-solid border-1')
                     $('#search').html('<img src="/img/arrow1.svg" alt="" class="arrow w-5">')
 
 
