@@ -1,3 +1,21 @@
+// Détecter si l'utilisateur est sur un iPhone
+const isiPhone = /iPhone/.test(navigator.userAgent);
+
+// Détecter si l'utilisateur est sur un appareil Android
+const isAndroid = /Android/.test(navigator.userAgent);
+
+// Sélectionner votre bouton
+const installButton = $('.install');
+
+// Appliquer la logique d'affichage en fonction du dispositif
+if (isiPhone) {
+  // Cacher le bouton sur iPhone
+  installButton.hide();
+} else if (isAndroid) {
+  // Afficher le bouton sur Android
+  installButton.show();
+}
+
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       navigator.serviceWorker.register('service-worker.js').then(function(registration) {
