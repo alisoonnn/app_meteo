@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
   <defs>
     <style>
       .cls-1 {
@@ -11,7 +11,6 @@
       }
     </style>
   </defs>
-  <image width="48" height="48" transform="translate(2.85 2.59) scale(.94)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAvXAAAL1wElddLwAAACq0lEQVRoge2Z23XbMAyGfzodQBtU3UAbxJ6g3iDZwM4E8Qb2Bh4hI9h96qO8gbyBvMHfB0oxRfMCXavT5jsnLzQIAgQEggxgQXLHJntbxgXJE8mlRLbPHJtvlsIdgHdL5iYwJAWwBHABcBbIAkBSzyF5rddSSkXX8yl+pRvbodDcUiC7JFk41tmTTLoan3qUkuTRIb+uwl//lYa8OX40djy0XnSTYg4cPMaT5IdnzntgDknmLuMNB2qZQRwoXBZUeNOCZOaZG0wH6ghuDGceotzG+HVkJ8lApaBOFbH80CwA/BTIPbsGea8+gK5AdQWR6BwGIw9DlK6UoK4+pZUOBcliSgdKr9lNHj40klu6q8zGdphkUo1/sPndFFUavrh0SRxoQ9ZBf0J9uks3ajemAwVb7BLD58sw63RYQKS8h/HtnKC7DPZW3tN4c51ge7FApPnykAIoqHP7wRHqPA462GKdTUhgAeBXR+VnACWsbrVyqF9r0GQbi0LbNPqs+x5dvq62D8Eo1C2u1PjMMXfPYXLeh7Oh7BKFjSGfMNzFDkn8ZGe87BWGbEJZCzIYUQcqwzL6T8wXQ26qnf9E5EAkEpnx+9SU9NzuQk4cTQ3Gb0db+8TI787UJTGn0Yly4tz3kLNyQolz6+6APB/H5aCUehM7UHm8xbCnbF9WTxIp6o/nN4D1qOa05yaKAPUZkI5rSyeui5gEyVfM03gASKMRIJkDaH2VnAqJA3OpOi4u0RSaORdJBE64P17NjR+SCJzHtqIjB6XUVRKBBECOeVWiC4CVUuoWjUD1H5MVgOvYVgk5oDK+9Uzem7upKai7UOcj8xf/JNSXopLWhdw3PjvYfOX4HhufFWy+M51i47PD2uXn2Pis+Nr9vwmbb0an2PgsoT41S1qPUL7x/54/FkNwsRmyJJ0AAAAASUVORK5CYII="/>
   <path class="cls-1" d="m19.18,5.9c1.2-.76,1.08-2.87,1.37-2.85.28.02-.1,1.99.91,2.85,1.12.96,3.34.04,3.43.34.09.29-2.12.66-2.63,2.06-.49,1.38.93,3.04.69,3.2-.23.15-1.09-1.64-2.4-1.71-1.38-.07-2.44,1.81-2.74,1.6-.29-.2,1-1.67.57-3.08-.4-1.33-2.08-1.82-1.94-2.17.14-.35,1.66.45,2.74-.23Z"/>
   <path class="cls-1" d="m31.36,5.01c.82-.52.74-1.98.94-1.96.19.01-.07,1.37.63,1.96.77.66,2.3.03,2.36.24.06.2-1.46.45-1.81,1.41-.34.95.64,2.09.47,2.2-.16.1-.75-1.13-1.65-1.18-.95-.05-1.68,1.24-1.88,1.1-.2-.14.69-1.15.39-2.12-.28-.92-1.43-1.25-1.34-1.49.1-.24,1.14.31,1.88-.16Z"/>
   <path class="cls-1" d="m9.44,1.86c2.67.76.05,8.35,4.54,12.93,4.41,4.51,11.72,2.02,12.38,4.54.56,2.12-4.09,5.92-8.94,6.74-4.29.73-9.48-.74-12.65-4.95-3.29-4.36-2.98-9.72-1.38-13.34,1.24-2.81,4.09-6.47,6.05-5.91Z"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
   <defs>
     <style>
       .cls-1 {
@@ -11,7 +11,6 @@
       }
     </style>
   </defs>
-  <image width="48" height="48" transform="translate(2.56 -1) scale(.94)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAwCAYAAAC4wJK5AAAACXBIWXMAAAuwAAALsAEaOBByAAACjklEQVRoge2Z3XHqMBCFj5gU4BKcDtzBJRUkHSQdwK0g3AqgA0pICeFWQDowHTgdnDxIBmH0s7ItD5nxN5MXs9LukVartQPMzOSF5JpkQ/JIshCOWfbwUyUHJ5x4w2u2wnGfqUL6jHHx0Jl0A+C9Y/MtCKYEsATwBeAgsAWAoh1D8tT6UkpF/YUmf6ObrqjQ2EZguyRZO/xspanrm7j0TEySe4f9i0mF9q+x7O3ne2vlQ/6iCyURsfMIIMkPz5j3wBhSF4UbAZaI1mY0EbUrCoM3RUhWnrHB1KDeyZUl6Ga3UwW8RFaUDFQQ6rQR2+dgAeBZYPfH9ZCXqgToytRWFsmc42HlZYjGlR7UVanppEZNsp5aROMN/Zqbw0d9s5eO56uuaJKFef7B63NUm5R8dc0lFZFCcptggt8kLNYmt4iaCavF8P0zmp9Yee3tYICAdCF0l8jBDgYKsP1EW5EFIg2bhxJATZ3rN2Ko8zooMsHPKma0APC/p4MDgAadLteIGt5GXFhLdiM1pc73gmcuXzc8hOhutO2xVEDlGLvlOGfAh7MJ7bsbK8u+YLj7HRNZB8B4Sawt24KydmU0RCJMcBX9N+urZTfVDpwRi4jsSGX9PjUNPW+JMSF7exbrt33Xw8SkvYtTl8sjrQ6WE58FD1ffw5RY0UVEWn7mY6eU+gvoG1sETUudLaR01jSvwQ8RQwDnVuIT4/RDY/IM4CBKJ+o7oswaTj9OSqnHaDqRfMN9CgBMXNGdIHkEkOfr9QgopZTkYN+tAOjPRPLqdKeIRRzyxjGIf8DvFrFTSp0A2cEuABxxXxXqC8BT+w+Z6E4YwycAp7xxidnBEpAMLw3h1NTU3avzw/bMzMzMTDZ+ANwspkkYGXooAAAAAElFTkSuQmCC"/>
   <path class="cls-1" d="m19.29,6.44c1.21-.76,1.09-2.89,1.38-2.87.28.02-.1,2,.92,2.87,1.13.97,3.36.04,3.45.34.09.29-2.14.66-2.64,2.07-.5,1.38.93,3.06.69,3.22-.23.15-1.1-1.65-2.41-1.72-1.39-.07-2.45,1.82-2.76,1.61-.29-.2,1-1.68.57-3.1-.4-1.34-2.1-1.83-1.95-2.18.14-.35,1.67.46,2.76-.23Z"/>
   <path class="cls-1" d="m31.54,5.54c.83-.53.75-1.99.95-1.98.19.01-.07,1.37.63,1.98.78.67,2.31.03,2.37.24.06.2-1.47.46-1.82,1.42-.34.95.64,2.11.47,2.21-.16.1-.75-1.14-1.66-1.19-.95-.05-1.69,1.25-1.9,1.11-.2-.14.69-1.16.4-2.13-.28-.92-1.44-1.26-1.34-1.5.1-.24,1.15.31,1.9-.16Z"/>
   <path class="cls-1" d="m9.49,2.37c2.69.76.05,8.4,4.57,13.01,4.44,4.53,11.79,2.03,12.46,4.57.56,2.14-4.11,5.95-9,6.78-4.32.73-9.54-.74-12.73-4.98-3.31-4.38-3-9.78-1.38-13.43,1.25-2.82,4.12-6.51,6.09-5.95Z"/>
