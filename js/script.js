@@ -49,6 +49,7 @@ function loadmeteo(city){
             var date = data.forecast.forecastday.date
             var heure = data.location.localtime
             var conditionmeteo = data.current.condition.text.toLowerCase()
+            var journee = data.current.is_day
 
         // FIN DECLA
 
@@ -75,10 +76,12 @@ function loadmeteo(city){
             $('.paysville').html('<p class="text-m m-0 leading-10">' + ville + ',</p> ' + pays)
             $('.dateheure').html(heure)
             $('.condition').html(wind + 'km/h <br> ' + hum + '%')
-            $('.icone').html('<img src="img/'+data.current.is_day+'/SVG/'+extractedNumber+'@2x.svg" class="h-1/2 w-full">')
+            $('.icone').html('<img src="img/'+data.current.is_day+'/SVG/'+extractedNumber+'@2x.svg" class="h-full w-full">')
             $('.temperature').html(temp +'°C')
 
             console.log(conditionmeteo)
+            console.log(data.current.is_day)
+            console.log(journee)
 
         // FIN SECTION 2
 
@@ -119,17 +122,13 @@ function loadmeteo(city){
 
         // CHANGEMENT BACKGROUND
 
-            function changeBackgroundBasedOnTime(localTime) {
+            function changeBackgroundBasedOnTime() {
 
             // geolocalisation
 
                 // Convertir la chaîne de l'heure locale en objet Date
-                var currentTime = new Date(localTime);
-                // Extraire l'heure de l'objet Date
-                var currentHour = currentTime.getHours();
-
-                // Vérifier si l'heure est entre 18h et 6h (18 inclus à 6 exclus)
-                if (currentHour > 6 && currentHour < 18) {
+  
+                if (journee == 1) {
                     // Changer le background-image
                     
                     
