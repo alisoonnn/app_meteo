@@ -77,6 +77,7 @@ function loadmeteo(city){
             $('.condition').html(wind + 'km/h <br> ' + hum + '%')
             $('.icone').html('<img src="img/'+data.current.is_day+'/SVG/'+extractedNumber+'@2x.svg" class="w-50 ">')
             $('.temperature').html(temp +'°C')
+
             console.log(conditionmeteo)
 
         // FIN SECTION 2
@@ -144,23 +145,23 @@ function loadmeteo(city){
                     $('.demain').removeClass('border-beige')
                     $('.demain').addClass('border-black')
                     $('.install').removeClass('border-beige border-solid border-1')
-                    $('#search').html('<img src="/src/img/arrow1.svg" alt="" class="arrow w-5">')
+                    $('#search').html('<img src="/img/arrow1.svg" alt="" class="arrow w-5">')
 
 
                     if( conditionmeteo.includes('soleil')){
-                      $('.bg').css('background-image', 'url("/src/img/jour.svg")');
+                      $('.bg').css('background-image', 'url("/img/jour.svg")');
                     }
                     else{
                       if(conditionmeteo.includes('pluie')){
-                        $('.bg').css('background-image', 'url("/src/img/pluie.svg")');
+                        $('.bg').css('background-image', 'url("/img/pluie.svg")');
                       }
                       else{
-                        $('.bg').css('background-image', 'url("/src/img/nuage.svg")');
+                        $('.bg').css('background-image', 'url("/img/nuage.svg")');
                       }
                     }
                     
                 } else {
-                    $('.bg').css('background-image', 'url("/src/img/nuit.svg")');
+                    $('.bg').css('background-image', 'url("/img/nuit.svg")');
                     $('.bg').css('background-size', 'cover');
                     $('.bg').removeClass('opacity-55');
                     $('.bg').addClass('opacity-50');
@@ -173,7 +174,7 @@ function loadmeteo(city){
                     $('.demain').removeClass('border-black')
                     $('.demain').addClass('border-beige')
                     $('.install').addClass('border-beige border-solid border-2')
-                    $('#search').html('<img src="/src/img/arrow0.svg" alt="" class="arrow w-5">')
+                    $('#search').html('<img src="/img/arrow0.svg" alt="" class="arrow w-5">')
 
 
                 }
