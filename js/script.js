@@ -75,7 +75,7 @@ function loadmeteo(city){
             $('.paysville').html('<p class="text-m m-0 leading-10">' + ville + ',</p> ' + pays)
             $('.dateheure').html(heure)
             $('.condition').html(wind + 'km/h <br> ' + hum + '%')
-            $('.icone').html('<img src="img/'+data.current.is_day+'/SVG/'+extractedNumber+'@2x.svg" class="w-50 ">')
+            $('.icone').html('<img src="img/'+data.current.is_day+'/SVG/'+extractedNumber+'@2x.svg" class="h-1/2 w-full">')
             $('.temperature').html(temp +'°C')
 
             console.log(conditionmeteo)

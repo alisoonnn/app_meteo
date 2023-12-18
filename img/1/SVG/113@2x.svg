@@ -11,31 +11,31 @@
       }
     </style>
   </defs>
-  <circle class="cls-1" cx="25" cy="24.95" r="6.63"/>
+  <circle class="cls-1" cx="25" cy="24.9" r="14.33"/>
   <g>
     <g id="_Radial_Repeat_" data-name="&amp;lt;Radial Repeat&amp;gt;">
-      <line class="cls-1" x1="17.51" y1="24.67" x2="14.79" y2="24.65"/>
+      <line class="cls-1" x1="8.8" y1="24.28" x2="2.93" y2="24.24"/>
     </g>
     <g id="_Radial_Repeat_-2" data-name="&amp;lt;Radial Repeat&amp;gt;">
-      <line class="cls-1" x1="19.94" y1="19.47" x2="18.03" y2="17.53"/>
+      <line class="cls-1" x1="14.05" y1="13.04" x2="9.94" y2="8.86"/>
     </g>
     <g id="_Radial_Repeat_-3" data-name="&amp;lt;Radial Repeat&amp;gt;">
-      <line class="cls-1" x1="25.33" y1="17.51" x2="25.35" y2="14.8"/>
+      <line class="cls-1" x1="25.72" y1="8.8" x2="25.76" y2="2.93"/>
     </g>
     <g id="_Radial_Repeat_-4" data-name="&amp;lt;Radial Repeat&amp;gt;">
-      <line class="cls-1" x1="30.53" y1="19.94" x2="32.47" y2="18.03"/>
+      <line class="cls-1" x1="36.96" y1="14.05" x2="41.14" y2="9.94"/>
     </g>
     <g id="_Radial_Repeat_-5" data-name="&amp;lt;Radial Repeat&amp;gt;">
-      <line class="cls-1" x1="32.49" y1="25.33" x2="35.2" y2="25.35"/>
+      <line class="cls-1" x1="41.2" y1="25.72" x2="47.07" y2="25.76"/>
     </g>
     <g id="_Radial_Repeat_-6" data-name="&amp;lt;Radial Repeat&amp;gt;">
-      <line class="cls-1" x1="30.06" y1="30.53" x2="31.97" y2="32.47"/>
+      <line class="cls-1" x1="35.95" y1="36.96" x2="40.06" y2="41.14"/>
     </g>
     <g id="_Radial_Repeat_-7" data-name="&amp;lt;Radial Repeat&amp;gt;">
-      <line class="cls-1" x1="24.67" y1="32.49" x2="24.65" y2="35.2"/>
+      <line class="cls-1" x1="24.28" y1="41.2" x2="24.24" y2="47.07"/>
     </g>
     <g id="_Radial_Repeat_-8" data-name="&amp;lt;Radial Repeat&amp;gt;">
-      <line class="cls-1" x1="19.47" y1="30.06" x2="17.54" y2="31.97"/>
+      <line class="cls-1" x1="13.04" y1="35.95" x2="8.86" y2="40.06"/>
     </g>
   </g>
 </svg>
