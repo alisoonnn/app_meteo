@@ -1,52 +1,42 @@
-// Détecter si l'utilisateur est sur un iPhone
-const isiPhone = /iPhone/.test(navigator.userAgent);
-
-// Détecter si l'utilisateur est sur un appareil Android
-const isAndroid = /Android/.test(navigator.userAgent);
-
-// Sélectionner votre bouton
-const installButton = $('.install');
-
-// Appliquer la logique d'affichage en fonction du dispositif
-if (isiPhone) {
-  // Cacher le bouton sur iPhone
-  installButton.hide();
-} else if (isAndroid) {
-  // Afficher le bouton sur Android
-  installButton.show();
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
 }
 
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    });
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  console.log('beforeinstallprompt fired:', e);
+  e.preventDefault();
+  deferredPrompt = e;
+  showInstallPromotion();
+});
+
+function showInstallPromotion() {
+  // Détecter si l'utilisateur est sur un iPhone
+  const isiPhone = /iPhone/.test(navigator.userAgent);
+
+  // Détecter si l'utilisateur est sur un appareil Android
+  const isAndroid = /Android/.test(navigator.userAgent);
+
+  // Sélectionner votre bouton
+  const installButton = $('.install');
+
+  // Appliquer la logique d'affichage en fonction du dispositif
+  if (isiPhone) {
+    // Cacher le bouton sur iPhone
+    installButton.hide();
+  } else if (isAndroid) {
+    // Afficher le bouton sur Android
+    installButton.show();
   }
+}
 
-  let deferredPrompt;
-
- 
-
-  window.addEventListener('beforeinstallprompt', (e) => {
-    console.log('beforeinstallprompt fired: '+e);
-    e.preventDefault();
-    deferredPrompt = e;
-    
-    showInstallPromotion();
-  });
-
-  // function showInstallPromotion() {
-  //   console.log('Ok installation');
-  //   $('.install').show();
-  // }
-
-  // json
-
-  
-  // fin json
 
 
 $( document ).ready(function() {
@@ -77,19 +67,6 @@ function loadmeteo(city){
         // FIN DECLA
 
 
-      fetch('/manifest.webmanifest')
-      .then(response => response.json())
-      .then(manifest => {
-        // Remplacez "votreNombre" par la condition que vous souhaitez
-        if(journee == 1){
-          colorbg = '#E7E0DA'
-        }else{
-          colorbg = '#1E1E24'
-        } // Exemple, remplacez par votre condition réelle
-
-        // Modifiez la valeur du manifeste en fonction de votre condition
-        manifest.background_color = colorbg
-      });
 
 
         // IMAGE EXTRACTION NBRE
