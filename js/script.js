@@ -37,6 +37,8 @@ function loadmeteo(city){
         method: 'GET',
         dataType: 'json',
         success: function(data) {
+
+        // DECLA
             
             console.log(data);
             var temp = data.current.temp_c
@@ -46,11 +48,12 @@ function loadmeteo(city){
             var pays = data.location.country
             var date = data.forecast.forecastday.date
             var heure = data.location.localtime
+            var conditionmeteo = data.current.condition.text.toLowerCase()
 
-            // $('#reponse').html('Ville : ' + ville + '<br>Pays : ' + pays + '<br>Température : ' + temp + '°C<br>Condition : ' + condition);
+        // FIN DECLA
 
 
-            // IMAGE
+        // IMAGE EXTRACTION NBRE
 
             function extractNumberFromImg(img) {
                 // Utilisation d'une expression régulière pour extraire le nombre
@@ -60,23 +63,26 @@ function loadmeteo(city){
                 return match ? parseInt(match[1], 10) : null;
             }
            
-            // Exemple d'utilisation
             var img = data.current.condition.icon ;
             var extractedNumber = extractNumberFromImg(img);
-           
-            console.log(extractedNumber);
 
-            // 
+        // FIN EXTRACTION NBRE
 
+
+
+        // SECTION 2 / aujourd'hui / date, heure, vent, humidité, icone, temperature, ville, pays
 
             $('.paysville').html('<p class="text-m m-0 leading-10">' + ville + ',</p> ' + pays)
             $('.dateheure').html(heure)
             $('.condition').html(wind + 'km/h <br> ' + hum + '%')
             $('.icone').html('<img src="img/'+data.current.is_day+'/SVG/'+extractedNumber+'@2x.svg" class="w-50 ">')
             $('.temperature').html(temp +'°C')
+            console.log(conditionmeteo)
+
+        // FIN SECTION 2
 
 
-            // section3
+        // SECTION 3 / autrejours / icone, jour, temp
 
             var day = data.forecast.forecastday;
 
@@ -108,20 +114,24 @@ function loadmeteo(city){
         
             $('.autrejours').append(article);
 
-            // background
+        // FIN SECTION 3
+
+        // CHANGEMENT BACKGROUND
 
             function changeBackgroundBasedOnTime(localTime) {
+
+            // geolocalisation
+
                 // Convertir la chaîne de l'heure locale en objet Date
                 var currentTime = new Date(localTime);
-                text = 'w-screen h-screen flex flex-col items-center justify-evenly max-w-480 mx-auto font-poppins'
-
                 // Extraire l'heure de l'objet Date
                 var currentHour = currentTime.getHours();
 
                 // Vérifier si l'heure est entre 18h et 6h (18 inclus à 6 exclus)
                 if (currentHour > 6 && currentHour < 18) {
                     // Changer le background-image
-                    $('.bg').css('background-image', 'url("/src/img/jour.svg")');
+                    
+                    
                     $('.bg').css('background-size', 'cover'); 
                     $('.bg').removeClass('opacity-50');
                     $('.bg').addClass('opacity-55');
@@ -137,9 +147,19 @@ function loadmeteo(city){
                     $('#search').html('<img src="/src/img/arrow1.svg" alt="" class="arrow w-5">')
 
 
+                    if( conditionmeteo.includes('soleil')){
+                      $('.bg').css('background-image', 'url("/src/img/jour.svg")');
+                    }
+                    else{
+                      if(conditionmeteo.includes('pluie')){
+                        $('.bg').css('background-image', 'url("/src/img/pluie.svg")');
+                      }
+                      else{
+                        $('.bg').css('background-image', 'url("/src/img/nuage.svg")');
+                      }
+                    }
                     
                 } else {
-                    // Changer le background-image à une autre image pour le jour
                     $('.bg').css('background-image', 'url("/src/img/nuit.svg")');
                     $('.bg').css('background-size', 'cover');
                     $('.bg').removeClass('opacity-55');
@@ -159,9 +179,13 @@ function loadmeteo(city){
                 }
             }
 
+          // recherche loc
+
             // Utiliser la fonction avec votre heure locale provenant de l'API
             var localTimeFromAPI = data.location.localtime;  // Remplacez cela par la valeur réelle provenant de votre API
             changeBackgroundBasedOnTime(localTimeFromAPI);
+
+        // FIN CHANGEMENT BACKGROUND
 }
         
         } //fin succss
@@ -172,15 +196,13 @@ function loadmeteo(city){
 // geoloc
 
 if ("geolocation" in navigator) {
-    // Use Geolocation API to get the user's location
+   
     navigator.geolocation.getCurrentPosition(function (position) {
         // Extract latitude and longitude
         var latitude = position.coords.latitude;
         var longitude = position.coords.longitude;
         var city = latitude + ',' + longitude;
-        // Log or use the obtained coordinates as needed
-        console.log("Latitude: " + latitude);
-        console.log("Longitude: " + longitude);
+
 
         loadmeteo(city);
 
@@ -191,12 +213,28 @@ if ("geolocation" in navigator) {
     console.log("Geolocation is not supported by this browser.");
 }
 
-// 
+// loc recherche
 
 $('#search').click(function() {
     var city = $('#r_city').val();
     loadmeteo(city);
     $('.autrejours').empty();
+});
+
+// btn install
+
+$('.install').click(function() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the install prompt');
+      } else {
+        console.log('User dismissed the install prompt');
+      }
+      deferredPrompt = null;
+    });
+  }
 });
 
 
