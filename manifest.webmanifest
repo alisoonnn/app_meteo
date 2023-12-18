@@ -3,6 +3,8 @@
   "short_name": "App Météo Alison",
   "start_url": "./index.html",  
   "display": "standalone",
+  "theme_color": "#1E1E24",
+  "background_color": "#1E1E24",
   "icons": [
     {
       "src": "img/icon.png",
