@@ -166,7 +166,7 @@ function loadmeteo(city){
                       $('.bg').css('background-image', 'url("/img/jour.svg")');
                     }
                     else{
-                      if(conditionmeteo.includes('pluie')){
+                      if(conditionmeteo.includes('pluie') ||conditionmeteo.includes('bruine')){
                         $('.bg').css('background-image', 'url("/img/pluie.svg")');
                       }
                       else{
